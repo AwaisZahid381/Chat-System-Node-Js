@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script defer src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>GalBat</title>
+  </head>
+  <body>
+    <!-- <h1>GalBat</h1> -->
+    <!-- <div id="message-container"></div>
+    <form id="send-container" action="">
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">Send</button>
+    </form> -->
+    <section class="chat_section">
+      <div class="brand">
+        <img id="logo" src="chatImage.jpg" alt="A pic was here" />
+        <h1>GalBat</h1>
+      </div>
+      <div class="message_area">
+      </div>
+      <textarea autofocus
+        id="textarea"
+        style="resize: none; overflow: hidden;"
+        cols="30"
+        rows="1"
+        placeholder="Write Something Good"
+      ></textarea>
+    </section>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</html>
+
